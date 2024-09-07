@@ -12,11 +12,12 @@ source:
 
 build:
   skip: True  # [not linux64]
-  number: 3
+  number: 4
 
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - pip
